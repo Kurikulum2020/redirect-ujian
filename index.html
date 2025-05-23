@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Redirect Ujian</title>
+  <script>
+    // Deteksi user agent Android 14 Samsung A24
+    const userAgent = navigator.userAgent;
+
+    if (userAgent.includes("SM-A245F") && userAgent.includes("Android 14")) {
+      window.location.href = "https://link-ujian-khusus.com"; // ganti dengan link tujuan
+    } else {
+      document.write("<h1>Akses tidak diizinkan</h1>");
+    }
+  </script>
+</head>
+<body>
+  <noscript>Harap aktifkan JavaScript untuk melanjutkan.</noscript>
+</body>
+</html>
